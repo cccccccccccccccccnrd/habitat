@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2em;
+  font-family: 'Akzidenz-Grotesk BQ Extended', 'Arial', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  background: url(bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.card {
+  padding: 0.5em 1em;
+  color: white;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 1) 100%);
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  border-radius: 100px;
+  /* box-shadow: 0.25em 0.25em 0.5em rgba(0, 0, 0, 0.25); */
+}
+
+.card a:hover {
+  color: red;
+}
+
+.ui {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 0 1em 0;
+}
+
+.desc {
+  max-width: 600px;
+  margin: 0 0 1em 0;
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5em;
+  line-height: 1.3;
+}
+
+.title {
+  display: block;
+  padding: 0.25em 0.5em;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.upper, .lower {
+  display: flex;
+}
+
+.upper {
+  margin: 0 0 0.25em 0;
+  align-items: center;
+  color: white;
+}
+
+.upper .card {
+  margin: 0.5em;
+}
+
+.lower {
+  flex-flow: column nowrap;
+}
