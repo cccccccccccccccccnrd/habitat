@@ -1,0 +1,23 @@
+{
+  "name": "habitat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cccccccccccccccccnrd/habitat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cccccccccccccccccnrd/habitat/issues"
+  },
+  "homepage": "https://github.com/cccccccccccccccccnrd/habitat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
