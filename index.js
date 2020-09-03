@@ -1,7 +1,10 @@
+const path = require('path')
 const express = require('express')
 const socket = require('./socket.js')
 
 const app = express()
+
+app.use('/', express.static(path.join(__dirname, 'offline')))
 
 app.get('/players', (req, res) => {
   const players = socket.getPlayers()
