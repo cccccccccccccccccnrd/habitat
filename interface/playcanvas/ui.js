@@ -17,12 +17,29 @@ Ui.prototype.initialize = function() {
 };
 
 Ui.prototype.show = function(description, artist, social, workshop, title) {
-    document.querySelector('#ui-desc').innerHTML = description;
-    document.querySelector('#ui-social').innerHTML = artist;
-    document.querySelector('#ui-social').href = social;
-    document.querySelector('#ui-workshop').innerHTML = workshop;
-    document.querySelector('#ui-workshop').href = '#';
-    document.querySelector('#ui-title').innerHTML = title;
+    document.querySelector('#ui-desc').innerHTML = description || '';
+    document.querySelector('#ui-social').innerHTML = artist || 'Artist';
+    document.querySelector('#ui-social').href = social || 'https://www.captcha-mannheim.de/';
+    document.querySelector('#ui-workshop').innerHTML = workshop || 'Workshop';
+    document.querySelector('#ui-title').innerHTML = title || 'Artwork';
+    
+    switch(workshop) {
+        case 'Creating Conflicting Spaces':
+            document.querySelector('#ui-workshop').href = 'https://www.captcha-mannheim.de/#/workshopleaders/0';
+            break;
+        case 'Personal Archive Narrative':
+            document.querySelector('#ui-workshop').href = 'https://www.captcha-mannheim.de/#/workshopleaders/1';
+            break;
+        case 'Infinite Paradise Always Forever And Ever':
+            document.querySelector('#ui-workshop').href = 'https://www.captcha-mannheim.de/#/workshopleaders/2';
+            break;
+        case 'Nature Patterns In AR':
+            document.querySelector('#ui-workshop').href = 'https://www.captcha-mannheim.de/#/workshopleaders/3';
+            break;
+        default:
+            document.querySelector('#ui-workshop').href = 'https://www.captcha-mannheim.de/';
+    }
+    
     document.querySelector('#ui').style.display = 'flex';
 };
 
