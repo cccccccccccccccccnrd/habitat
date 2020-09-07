@@ -16,7 +16,7 @@ const spaces = [{
   pc: {
     id: 716323,
     name: 'AGARTHA 5G',
-    scenes: 'Untitled'
+    scenes: ['Untitled']
   }
 }, {
   name: 'Sandy Richter',
@@ -27,7 +27,7 @@ const spaces = [{
   pc: {
     id: 717007,
     name: 'sandy',
-    scenes: 'Untitled'
+    scenes: ['Untitled']
   }
 }, {
   name: 'Gina Bartzok',
@@ -44,7 +44,7 @@ const spaces = [{
   pc: {
     id: 716172,
     name: 'spacespace',
-    scenes: 'Untitled'
+    scenes: ['Untitled']
   }
 }]
 
