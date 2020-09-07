@@ -13,11 +13,11 @@
 
     #loading {
       position: absolute;
-      z-index: 999999;
+      z-index: 9999991;
       display: flex;
       width: 100%;
       height: 100vh;
-      font-family: 'Arial', sans-serif;
+      font-family: sans-serif;
       font-size: 5vw;
       background: black;
     }
@@ -25,14 +25,17 @@
     #loading img {
       width: 100%;
       height: 100%;
+      z-index: 9999993;
     }
 
     #loading #progress {
       position: absolute;
-      background: rgba(21, 50, 6, 0.4);
+      background: rgba(255, 255, 255, 0.1);
       height: 100vh;
       width: 40%;
       align-self: baseline;
+      z-index: 9999992;
+      /* border-right: 1px solid rgba(0, 255, 0, 1); */
     }
   </style>
 </head>
