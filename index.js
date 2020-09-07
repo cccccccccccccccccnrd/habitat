@@ -9,8 +9,8 @@ app.use(cors())
 
 const spaces = [{
   name: 'Andri Schatz',
-  title: '5G Agartha',
-  url: '5gagartha',
+  title: 'AGARTHA 5G',
+  url: 'agartha5g',
   social: 'https://instagram.com/likebot9kplus',
   website: 'https://www.andrischatz.website/'
 }, {
