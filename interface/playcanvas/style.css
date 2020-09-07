@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'WhyteInktrapTrial Regular';
-  src: url('WhyteInktrapTrial-Regular.woff2') format('woff2');
+  font-family: 'MonumentGrotesk Regular';
+  src: url('https://http://habitat.captcha-mannheim.de/assets/monumentgrotesk-regular.otf') format('opentype');
 }
 
 * {
@@ -13,18 +13,18 @@ html, body {
 }
 
 body {
-  font-family: 'WhyteInktrapTrial Regular', 'Arial', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'MonumentGrotesk Regular', 'Arial', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  background: url(bg.png) no-repeat center center fixed; 
+  /* background: url(bg.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 
 a, a:visited {

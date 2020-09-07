@@ -41,7 +41,8 @@
 
   <script>
     const url = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://habitat.captcha-mannheim.de'
-    const space = window.location.pathname.replaceAll('/', '')
+    let space = window.location.pathname.replaceAll('/', '')
+    space = 'spacespace'
 
     document.querySelector('#loading-img').src = `${url}/assets/loading-${window.innerWidth > 700 ? 'desktop' : 'mobile'}-${space}.png`
   </script>
