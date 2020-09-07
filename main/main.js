@@ -6,7 +6,7 @@ async function init () {
 
   const spaces = json.spaces
   const space = spaces[Math.floor(Math.random() * spaces.length)]
-  window.location = `http://localhost:3000/${space.url}`
+  window.location = `${url}/${space.url}`
 }
 
 init()
