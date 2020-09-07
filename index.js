@@ -15,7 +15,8 @@ const spaces = [{
   website: 'https://www.andrischatz.website/',
   pc: {
     id: 716323,
-    name: 'AGARTHA 5G'
+    name: 'AGARTHA 5G',
+    scenes: 'Untitled'
   }
 }, {
   name: 'Sandy Richter',
@@ -25,7 +26,8 @@ const spaces = [{
   website: null,
   pc: {
     id: 717007,
-    name: 'sandy'
+    name: 'sandy',
+    scenes: 'Untitled'
   }
 }, {
   name: 'Gina Bartzok',
@@ -41,7 +43,8 @@ const spaces = [{
   website: 'https://www.jonasanetzberger.xyz/',
   pc: {
     id: 716172,
-    name: 'spacespace'
+    name: 'spacespace',
+    scenes: 'Untitled'
   }
 }]
 
