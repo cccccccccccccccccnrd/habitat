@@ -21,7 +21,7 @@ function init () {
 
       state.players[id] = newPlayer
 
-      console.log('player connected', id)
+      console.log('client connected', id)
 
       socket.emit('player-data', { id: id, players: state.players })
 

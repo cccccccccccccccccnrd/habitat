@@ -25,6 +25,11 @@ Trigger.attributes.add('title', {
     default: 'Earlier cellphones'
 });
 
+Trigger.attributes.add('link', {
+    type: 'string',
+    default: 'http://vimeo.com'
+});
+
 // initialize code called once per entity
 Trigger.prototype.initialize = function() {
     this.entity.collision.on('triggerenter', this.onTriggerEnter, this);
@@ -32,7 +37,7 @@ Trigger.prototype.initialize = function() {
 };
 
 Trigger.prototype.onTriggerEnter = function(entity) {
-    this.app.fire('ui:show', this.description, this.artist, this.social, this.workshop, this.title);
+    this.app.fire('ui:show', this.description, this.artist, this.social, this.workshop, this.title, this.link);
 };
 
 Trigger.prototype.onTriggerLeave = function(entity) {
