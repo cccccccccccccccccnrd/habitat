@@ -12,7 +12,7 @@ Ui.prototype.initialize = function() {
     this.initHtml()
     
     this.app.on('ui:show', function(description, artist, social, workshop, title, link) {
-        self.show(description, artist, social, workshop, title)
+        self.show(description, artist, social, workshop, title, link)
     });
     
     this.app.on('ui:hide', function() {
@@ -25,7 +25,7 @@ Ui.prototype.show = function(description, artist, social, workshop, title, link)
     document.querySelector('#ui-social').innerHTML = artist || 'Artist'
     document.querySelector('#ui-social').href = social || 'https://www.captcha-mannheim.de/'
     document.querySelector('#ui-workshop').innerHTML = workshop || 'Workshop'
-    document.querySelector('#ui-title').innerHTML = `Artwork <a id="ui-target-blank" href="${link}">&nearr;</a>` || 'Artwork <a id="ui-target-blank" href="#">&nearr;</a>'
+    document.querySelector('#ui-title').innerHTML = link ? `${title} <a id="ui-target-blank" href="${link}" target="_blank">&nearr;</a>` : title
     
     switch(workshop) {
         case 'Creating Conflicting Spaces':
