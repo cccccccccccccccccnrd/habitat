@@ -23,7 +23,7 @@ pc.script.createLoadingScreen(function (app) {
   }
 
   function initCss () {
-    const css = 'html,body{margin:0;padding:0}#loading{position:absolute;z-index:9999991;display:flex;width:100%;height:100vh;font-family:sans-serif;font-size:5vw;background:#000}#loading img{width:100%;height:100%;z-index:9999993}#loading #progress{position:absolute;background:rgba(255,255,255,.1);height:100vh;width:40%;align-self:baseline;z-index:9999992}'
+    const css = 'html,body{margin:0;padding:0}#loading{position:absolute;z-index:9999991;display:flex;width:100%;height:100vh;font-family:sans-serif;font-size:5vw;background:#000}#loading img{width:100%;height:100%;z-index:9999993}#loading #progress{position:absolute;background:rgba(85,223,14,1);height:100vh;width:40%;align-self:baseline;z-index:9999992}'
     const style = document.createElement('style')
     style.type = 'text/css'
 
