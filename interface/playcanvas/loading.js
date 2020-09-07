@@ -1,6 +1,11 @@
 pc.script.createLoadingScreen(function (app) {
   function showLoading () {
-    document.body.insertAdjacentHTML('beforeend', `<div id="ui-top" class="ui"><div class="container"><div class="links">${links}</div><img src="${url}/assets/ui-top-${space}.png"/></div></div><div id="ui-bottom" class="ui"><section class="info"><div id="ui-desc" class="desc"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan justo eget turpis placerat sagittis id et quam. Nullam nec ultricies lacus. Nam fringilla maximus vestibulum. Nullam lobortis pretium risus at aliquet. Sed lacinia eu ante a faucibus. Maecenas pulvinar augue a odio commodo scelerisque.</p></div><div class="upper">By<p class="card name"><a id="ui-social" href="http://instagram.com" target="_blank">Artist</a></p> as part of<p class="card workshop"><a id="ui-workshop" href="https://www.captcha-mannheim.de" target="_blank">Workshop</a></p></div><div class="lower"><p id="ui-title" class="card title">Title <a id="ui-target-blank" href="#" target="_blank">&nearr;</a></p></div></section></div>`)
+    document.body.insertAdjacentHTML('beforeend', `<div id="loading" class="loading"><div id="progress"></div><img id="loading-img" src=""></div>`)
+
+    const url = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://habitat.captcha-mannheim.de'
+    const space = window.location.pathname.replaceAll('/', '')
+
+    document.querySelector('#loading-img').src = `${url}/assets/loading-${window.innerWidth > 700 ? 'desktop' : 'mobile'}-${space}.png`
   }
 
   function hideLoading () {
@@ -9,15 +14,26 @@ pc.script.createLoadingScreen(function (app) {
   }
 
   function setProgress (value) {
-    const progress = document.getElementById('progress')
+    const progress = document.querySelector('#progress')
+  
     if (progress) {
-        value = Math.min(1, Math.max(0, value))
-        progress.style.width = `${value * 100}%`
+      value = Math.min(1, Math.max(0, value))
+      progress.style.width = `${value * 100}%`
     }
   }
 
   function initCss () {
+    const css = 'html,body{margin:0;padding:0}#loading{position:absolute;z-index:999999;display:flex;width:100%;height:100vh;font-family:\'Arial\',sans-serif;font-size:5vw;background:#000}#loading img{width:100%;height:100%}#loading #progress{position:absolute;background:rgba(21,50,6,.4);height:100vh;width:40%;align-self:baseline}'
+    const style = document.createElement('style')
+    style.type = 'text/css'
 
+    if (style.styleSheet) {
+      style.styleSheet.cssText = css
+    } else {
+      style.appendChild(document.createTextNode(css))
+    }
+
+    document.head.appendChild(style)
   }
 
   initCss()
