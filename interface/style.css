@@ -62,6 +62,7 @@ p {
 }
 
 #ui-bottom {
+  display: none;
   bottom: 0;
 }
 
