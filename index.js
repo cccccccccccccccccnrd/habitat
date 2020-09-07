@@ -12,13 +12,15 @@ const spaces = [{
   title: 'AGARTHA 5G',
   url: 'agartha5g',
   social: 'https://instagram.com/likebot9kplus',
-  website: 'https://www.andrischatz.website/'
+  website: 'https://www.andrischatz.website/',
+  id: 716323
 }, {
   name: 'Sandy Richter',
   title: 'Wow cool',
   url: 'sandy',
   social: 'https://www.instagram.com/sandyrichter_',
-  website: null
+  website: null,
+  id: 717007
 }, {
   name: 'Gina Bartzok',
   title: 'yeah yeah not really',
@@ -30,7 +32,8 @@ const spaces = [{
   title: 'spacespace',
   url: 'spacespace',
   social: 'https://www.instagram.com/jonasanetzberger.xyz',
-  website: 'https://www.jonasanetzberger.xyz/'
+  website: 'https://www.jonasanetzberger.xyz/',
+  id: 716172
 }]
 
 spaces.forEach((space) => {

@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 
-build.sh
+build.js
 .env
 *.woff2
 *.otf
