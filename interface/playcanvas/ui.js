@@ -54,7 +54,7 @@ Ui.prototype.hide = function() {
 Ui.prototype.initStyles = function() {
     var style = pc.createStyle(this.styles.resource || '');
     document.head.appendChild(style);
-    this.app.assets.load(styles);
+    this.app.assets.load(this.styles);
 };
 
 Ui.prototype.initHtml = async function() {
