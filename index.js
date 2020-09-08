@@ -20,7 +20,7 @@ const spaces = [{
 }, {
   name: 'Sandy Richter',
   title: 'allow all and continue ',
-  url: 'allowallandcontinue ',
+  url: 'allowallandcontinue',
   social: 'https://www.instagram.com/sandyrichter_',
   website: null,
   pc: {
