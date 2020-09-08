@@ -19,8 +19,8 @@ const spaces = [{
   }
 }, {
   name: 'Sandy Richter',
-  title: 'Wow cool',
-  url: 'sandy',
+  title: 'allow all and continue ',
+  url: 'allowallandcontinue ',
   social: 'https://www.instagram.com/sandyrichter_',
   website: null,
   pc: {

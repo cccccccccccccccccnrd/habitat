@@ -41,7 +41,7 @@ p {
 }
 
 #ui-top .container {
-  max-width: 600px;
+  max-width: 50vw;
 }
 
 #ui-top img {
@@ -52,7 +52,6 @@ p {
   position: absolute;
   display: flex;
   width: 100%;
-  max-width: 600px;
   height: 100%;
 }
 
