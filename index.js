@@ -50,8 +50,8 @@ spaces.forEach((space) => {
   app.use(`/${space.url}`, express.static(path.join(__dirname, space.url)))
 })
 
-app.use('/', express.static(path.join(__dirname, 'offline')))
-app.use('/space', express.static(path.join(__dirname, 'main')))
+app.use('/', express.static(path.join(__dirname, 'main')))
+app.use('/offline', express.static(path.join(__dirname, 'offline')))
 app.use('/assets', express.static(path.join(__dirname, 'assets')))
 
 app.get('/meta', (req, res) => {
