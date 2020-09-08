@@ -51,7 +51,7 @@ p {
 #ui-top .links {
   position: absolute;
   display: flex;
-  width: 100%;
+  width: 50vw;
   height: 100%;
 }
 
